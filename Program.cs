@@ -8,7 +8,7 @@ builder.Services.AddControllers()
     .ConfigureApiBehaviorOptions(options => //Vai suprimir as validações padrão do ASP.NET
     {
         options.SuppressModelStateInvalidFilter = true;
-    }); 
+    });
 
 builder.Services.AddDbContext<BlogDataContext>();
 
