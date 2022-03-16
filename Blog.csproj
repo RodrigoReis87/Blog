@@ -14,6 +14,18 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.2" />
+    <PackageReference Include="SecureIdentity" Version="1.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20220303232129_CreateDatabase.cs" />
+    <Compile Remove="Migrations\20220303232129_CreateDatabase.Designer.cs" />
+    <Compile Remove="Migrations\BlogDataContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations" />
+    <Folder Include="wwwroot\Images" />
   </ItemGroup>
 
 </Project>
